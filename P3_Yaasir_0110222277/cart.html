@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+
+<body style="width: 43%; border: 2px solid black; margin-left: 27%; margin-top: 50px;">
+    <header style="background-color: #367E18; padding: 15px;">
+        <h1 style="margin-left: 15px;">Black Goose Bistro | Pizza-on-Demand</h1>
+    </header>
+
+    <p style="margin-left: 20px; margin-bottom: 60px;"><span style="font-size: 1.2em; margin-left: 20px; word-spacing: 5px;"> 12" wood-fired pizzas are available for delivery.
+         Build your custom pizza and well deliver it within an hour</span></p>
+
+         <p style="margin-left: 20px; font-size: 1.4em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <strong> Your information</strong></p>
+       <form action="Succes.html">
+         <label style="margin-left: 15px;" for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label style="margin-left: 15px;" for="add">Address</label>
+        <input type="text" id="add" name="add">
+        <br><br>
+        <label style="margin-left: 15px;" for="no">Telephone Number</label>
+        <input type="text" id="no" name="no">
+        <br><br>
+        <label style="margin-left: 15px;" for="mail">E-mail</label>
+        <input type="email" id="mail" name="mail">
+        <br><br>
+        <label style="margin-left: 15px;" for="instruction">Delivery instruction</label>
+        <br>
+        <textarea style="margin-left: 15px;margin-bottom: 60px;" name="instruction" id="instruction" cols="70" rows="10" placeholder="no more than 300 characters long"></textarea>
+
+        <p><span style="margin-left: 15px; font-size: 1.5em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Your Dream Pizza</span> <br>
+            <span style="margin-left: 15px; font-style: italic; font-size: 1.1em; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Pizza Specs</span></p>
+
+            <label style="margin-left: 15px;font-size: 1.2em; font-style: italic;" for="">Crust (Chosee one)</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="white" name="crust" value="white">
+            <label for="white" id="white"> Class White</label><br>
+            <input style="margin-left: 15px;" type="radio" id="multi" name="crust" value="multi">
+            <label for="multi" id="multi"> Multigrain</label><br>
+            <input style="margin-left: 15px;" type="radio" id="chesee" name="crust" value="chesee">
+            <label for="chesee" id="chesee"> Chesee-Stuffed crust</label><br>
+            <input style="margin-left: 15px;margin-bottom: 10px;" type="radio" id="gluten" name="crust" value="gluten">
+            <label for="gluten" id="gluten"> Gluten-fre</label><br>
+
+            <label style="margin-left: 15px;font-size: 1.2em; font-style: italic;" for=""> Topping(Chosee as many as you want)</label><br>
+
+            <input style="margin-left: 15px;" type="checkbox" name="topping" id="sauce" value="sauce">
+            <label for="sauce" id="sauce"> Red Sauce</label><br>
+            <input style="margin-left: 15px;" type="checkbox" name="topping" id="rella" value="rella">
+            <label for="rella" id="rella"> Mozzarella Chesee</label><br>
+            <input style="margin-left: 15px;" type="checkbox" name="topping" id="pep" value="pep">
+            <label for="pep" id="pep"> Paproni</label><br>
+            <input style="margin-left: 15px;" type="checkbox" name="topping" id="mus" value="mus">
+            <label for="mus" id="mus"> Mushrooms</label><br>
+            <input style="margin-left: 15px;" type="checkbox" name="topping" id="per" value="per">
+            <label for="per" id="per"> Peppers</label><br>
+            <input style="margin-left: 15px; margin-bottom: 30px;" type="checkbox" name="topping" id="vies" value="vies">
+            <label for="vies" id="vies"> Anchovies</label><br>
+
+            <label style="margin-left: 15px; font-size: 1,1em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Number</label><br>
+
+            <label style="margin-left: 15px;" for="pcs">How many pizzas :</label>
+            <select name="pizzas" id="pcs">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+            </select>
+            <br><br>
+          
+            <div style="margin-left: 15px; margin-bottom: 40px;">
+            <input style="margin-right: 20px;" type="submit" value="Bring me a pizza" id="submit">
+
+            <input type="reset">
+        </div>
+    </form>
+</body> 
+</html>
