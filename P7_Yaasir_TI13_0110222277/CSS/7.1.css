@@ -1,0 +1,42 @@
+div{
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    margin-left: 20px;
+    /* border-radius: 15px; */
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    left: 20%;
+}
+
+.container img{
+    width: 154px;
+    height: 154px;
+}
+
+.kotak1{
+    background-color: red;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.kotak2{
+    background-color: salmon;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.kotak3{
+    background-color: goldenrod;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.kotak4{
+    background-color: beige;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
