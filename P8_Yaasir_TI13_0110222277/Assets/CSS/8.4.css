@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+header, article, aside, footer, nav{
+    padding: 1em;
+}
+
+header, footer{
+    background-color: bisque;
+    height: 20vh;
+}
+
+nav{
+    flex: 0.2;
+    background-color: pink;
+}
+
+
+.container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.main > article{
+    flex: 1;
+}
+
+.main > aside{
+    flex: 0 0 20vw;
+    background-color: aqua;
+}
