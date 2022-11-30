@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 9.1</title>
+    <script></script>
+  </head>
+  <body>
+    <h1 align="center">Menghitung Luas dan Keliling Lingkaran</h1>
+    <hr />
+    <span
+      style="
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      "
+      id="pi"
+    ></span>
+    <br />
+    <span
+      style="
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      "
+      id="jari"
+    ></span>
+    <br />
+    <span
+      style="
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      "
+      id="luas"
+    ></span>
+    <br />
+    <span
+      style="
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      "
+      id="keliling"
+    ></span>
+
+    <!-- Kode JavaScript -->
+    <script>
+      const phi = 3.14;
+      let r = 14;
+      let l = phi * (r * r);
+      let k = phi * (2 * r);
+
+      console.log(l);
+      console.log(k);
+      console.log("Hello Word");
+      console.log(2 + 3);
+
+      document.getElementById("pi").innerHTML = "-  " + "Phi :" + phi;
+      document.getElementById("jari").innerHTML = "-  " + "Jari - Jari :" + r;
+      document.getElementById("luas").innerHTML =
+        "-  " + "Luas Lingkaran :" + l;
+      document.getElementById("keliling").innerHTML =
+        "-  " + "Keliling lingkaran :" + k;
+    </script>
+  </body>
+</html>
