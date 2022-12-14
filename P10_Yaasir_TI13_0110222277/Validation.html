@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Form Validation</title>
+</head>
+<body style="margin: 250px">	
+	<center>
+		<form>
+			Nama :<br/>
+			<input type="text" required="" maxlength="20" placeholder="Nama" id="nama" name="nama"><br/><br/>
+			Email :<br/>
+			<input type="email" required="" placeholder="Email" id="email" name="email"><br/><br/>
+			Jam Keberangkatan :<br/>
+			<input type="time" required="" placeholder="Jam Keberangkatan" id="jam" name="jam"><br/><br/>
+			Tujuan Keberangkatan :<br/>
+			<input type="text" placeholder="Tujuan Keberangkatan" id="tujuan" name="tujuan"><br/><br/>
+			Jumlah Tiket<br/>
+			<input type="number" min="1" max="5" placeholder="Jumlah Tiket" id="jml_tiket" name="jml_tiket"><br/><br/>
+			<button type="submit">SUBMIT</button>
+		</form>
+	</center>
+</body>
+<script type="text/javascript">
+	function validation() {
+		var Nama = document.getElementById("Nama").value;
+		var Email = document.getElementById("Email").value;
+		var JamKeberangkatan = document.getElementById("Jam Keberangkatan").value;
+		var TujuanKeberangkatan = document.getElementById("Tujuam Keberangkatan").value;
+		var JumlahTiket = document.getElementById("Jumlah Tiket").value;
+		var error_message = document.getElementById("error_message");
+		var text;
+
+		error_message.style.padding = "10px";
+
+		if(nama.length <5){
+			text = "Please Enter Valid Name";
+			error_message.innerHTML = text;
+			return false;
+		}
+
+		if(JumlahTiket >5){
+			text = "You only can buy 5 ticket";
+			error_message.innerHTML = text;
+			return false;
+		}
+		alert("Form Berhasil di Submit !")
+		return true;
+	}
+
+</script>
+</html>
