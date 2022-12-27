@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 11.1</title>
+    <script>
+      // Membuat Array Fruits
+      let fruits = ["Apple", "Manggo", "Orange"];
+      console.log(fruits[0]);
+
+      // Menampilkan semua data Array dengan looping for
+      for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+      }
+      console.log("");
+      fruits.push("Anggur", "Durian"); //Untuk Menambahkan data
+      fruits.sort(); // Untuk mengurutkan abjad
+      fruits.pop(); //Untuk Menghapus data array paling akhir
+      fruits.splice(); // Untuk Menghapus Data dari index sesuai keinginan
+
+      for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+      }
+
+      // Object
+      let mobil = {
+        tipe: "Turismo",
+        merek: "Lambargini",
+        tahun: 2009,
+        warna: "Merah",
+        jalan: function () {
+          console.log("MMBBEERRRRRRR.....!!!!!!!!!!r");
+        },
+      };
+
+      console.log(mobil);
+      console.log(mobil.jalan);
+
+      // Jenis Function :
+      // 1. Function Biasa
+      // 2. Anonym Function (Biasa di pakai didalam object atau didalam function)
+      // 3. Arrow Function (Function didalam variebel)
+    </script>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar Array</h1>
+  </body>
+</html>

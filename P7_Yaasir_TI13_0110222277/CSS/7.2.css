@@ -1,0 +1,76 @@
+body{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+.content{
+    background-color: beige;
+    box-shadow: 0 0 10px black;
+    border: 3px solid black;
+}
+
+.hijau{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.baris1 div{
+    display: inline-block;
+}
+
+.kuning{
+    width: 20%;
+    height: 250px;
+    background-color: yellow;
+    margin-top: 30px;
+    margin-right: 22px;
+    margin-left: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.merah{
+    width: 77%;
+    height: 250px;
+    background-color: salmon;
+    margin-top: 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.baris2 div{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.kuning2{
+    width: 20%;
+    height: 250px;
+    background-color: yellow;
+    margin-top: 30px;
+    margin-right: 22px;
+    margin-left: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.biru{
+    width: 77%;
+    height: 250px;
+    background-color: lightblue;
+    margin-top: 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}

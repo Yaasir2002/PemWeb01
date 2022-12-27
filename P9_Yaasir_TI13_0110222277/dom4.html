@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prsktitkum 9.4</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+      }
+      .container {
+        background-color: white;
+        margin-top: 50px;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+
+      .header {
+        background-color: antiquewhite;
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      hr {
+        margin-top: 0px;
+      }
+
+      .header h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .main {
+        padding: 20px;
+      }
+
+      .main p {
+        margin-left: 5px;
+        font-size: 20px;
+        margin-bottom: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>
+          Menghitung Jumlah 2 Bilangan
+          <br />
+          sederhana
+        </h2>
+      </div>
+      <hr />
+      <div class="main">
+        <form>
+          <p>Masukan Angka</p>
+          <input type="number" id="angka1" onchange="hasil_operasi()" />
+          <br />
+          <br />
+          <span>+</span>
+          <br />
+          <p>Masukan Angka</p>
+          <input type="number" id="angka2" onchange="hasil_operasi()" />
+          <br />
+          <br />
+          <span>=</span>
+          <br />
+          <p>Hasil</p>
+          <input type="number" id="Hasil" onchange="hasil_operasi()" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Kode JavaScript -->
+    <script>
+      function hasil_operasi() {
+        const a = document.getElementById("angka1").value;
+        const b = document.getElementById("angka2").value;
+        let hasil = parseInt(a) + parseInt(b);
+
+        document.getElementById("Hasil").value = hasil;
+      }
+    </script>
+  </body>
+</html>
